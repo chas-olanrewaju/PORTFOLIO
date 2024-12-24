@@ -1,1 +1,1 @@
-# This is my Strealit Portfolio
+# This is my Streamlit Portfolio
