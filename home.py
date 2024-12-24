@@ -15,11 +15,11 @@ def home():
         st.write(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     # Profile image file
-    with open("assets\PIC.jpg", "rb") as img_file:
+    with open("assets/PIC.jpg", "rb") as img_file:
         img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
 
     # PDF CV file
-    with open("assets\CV.pdf", "rb") as pdf_file:
+    with open("assets/CV.pdf", "rb") as pdf_file:
         pdf_bytes = pdf_file.read()
 
     
