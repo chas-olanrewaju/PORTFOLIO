@@ -36,6 +36,4 @@ showWarningOnDirectExecution = false
 hideTopBar = true
 hideSidebarNav = true
 
-[ui]
-hideFooter = true
 
