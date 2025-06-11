@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 def show():
     
     # Title and header
@@ -22,8 +23,7 @@ def show():
     st.download_button(label="📥 Download Poster",
                     data=PDFbyte,
                     file_name="Brain_Tumor_DL_Poster.pdf",
-                    mime='application/octet-stream',
-                    key="poster_download")
+                    mime='application/octet-stream',)
 
     # Overview
     st.markdown("""

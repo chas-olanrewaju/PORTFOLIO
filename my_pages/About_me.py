@@ -2,6 +2,7 @@ import streamlit as st
 import base64
 
 
+
 def home():
     
 
@@ -85,14 +86,22 @@ def home():
 
     st.write("##")
 
-    # Download CV button
-    st.download_button(
-        label="📄 Download my CV",
-        data=pdf_bytes,
-        file_name="CV.pdf",
-        mime="application/pdf",
-        key="cv_charles_olanrewaju"  # Unique key for the button to avoid conflicts
-    )
+    # # Download CV button
+    # st.download_button(
+    #     label="📄 Download my CV",
+    #     data=pdf_bytes,
+    #     file_name="CV.pdf",
+    #     mime="application/pdf",
+    #     key= KEYS["ABOUT_CV"]  # Unique key for the button to avoid conflicts
+    # )
+
+    with open("assets/CV.pdf", "rb") as file:
+        st.download_button(
+            label="📄 Download my CV",
+            data=file,
+            file_name="CV.pdf",
+            mime="application/pdf",
+        )
 
 
     st.write("##")
