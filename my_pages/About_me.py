@@ -86,22 +86,22 @@ def home():
 
     st.write("##")
 
-    # # Download CV button
-    # st.download_button(
-    #     label="📄 Download my CV",
-    #     data=pdf_bytes,
-    #     file_name="CV.pdf",
-    #     mime="application/pdf",
-    #     key= KEYS["ABOUT_CV"]  # Unique key for the button to avoid conflicts
-    # )
 
-    with open("assets/CV.pdf", "rb") as file:
-        st.download_button(
-            label="📄 Download my CV",
-            data=file,
-            file_name="CV.pdf",
-            mime="application/pdf",
-        )
+    # with open("assets/CV.pdf", "rb") as file:
+    #     st.download_button(
+    #         label="📄 Download my CV",
+    #         data=file,
+    #         file_name="CV.pdf",
+    #         mime="application/pdf",
+    #     )
+
+
+    # with open("assets/D3002144_olanrewaju_charles_DL_Poster.pdf", "rb") as pdf_file:
+    #     PDFbyte = pdf_file.read()
+    # st.download_button(label="📥 Download Poster",
+    #                 data=PDFbyte,
+    #                 file_name="Brain_Tumor_DL_Poster.pdf",
+    #                 mime='application/octet-stream',)
 
 
     st.write("##")
