@@ -22,7 +22,8 @@ def show():
     st.download_button(label="📥 Download Poster",
                     data=PDFbyte,
                     file_name="Brain_Tumor_DL_Poster.pdf",
-                    mime='application/octet-stream')
+                    mime='application/octet-stream',
+                    key="poster_download_button")
 
     # Overview
     st.markdown("""
