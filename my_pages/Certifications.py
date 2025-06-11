@@ -8,6 +8,7 @@ def show():
     st.markdown("#### Here's a curated list of my certifications and professional credentials:")
 
     certifications = {
+        "☁️ AI-900: Microsoft Azure AI Fundamentals": "2025",
         "🧠 TensorFlow–Keras Boot Camp by OpenCV": "2024",
         "📘 Machine Learning Specialization by Coursera": "2024",
         "🐍 Python for Beginners": "2023",

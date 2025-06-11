@@ -17,3 +17,25 @@ textColor="#f5f5f5"
 
 # Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
 # font="sans serif"
+
+
+
+[theme]
+base="light"
+
+[server]
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = true
+
+[global]
+showWarningOnDirectExecution = false
+
+[ui]
+hideTopBar = true
+hideSidebarNav = true
+
+[ui]
+hideFooter = true
+
