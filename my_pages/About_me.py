@@ -91,15 +91,13 @@ def home():
         data=pdf_bytes,
         file_name="CV.pdf",
         mime="application/pdf",
+        key="download_cv_button"
     )
+
 
     st.write("##")
     
     st.write(f"""<div class="subtitle" style="text-align: center;">⬅️ Check out my Projects in the navigation menu! </div>""", unsafe_allow_html=True)
-
-
-
-
 
 
 home()

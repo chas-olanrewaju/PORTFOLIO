@@ -1,8 +1,6 @@
 
 import streamlit as st
 
-
-
 st.set_page_config(page_title="Portfolio", page_icon="📁")
 
 # Sidebar Navigation
@@ -39,11 +37,6 @@ elif main_section == "📁 Projects":
         import my_pages.ALS_Disease as ALS_Disease
         ALS_Disease.show()
 
-    # elif projects_page == "Sentiment Analysis":
-    #     # Import the ALS Disease project page only when selected
-    #     import my_pages.Sentiment_Analysis as Sentiment_Analysis
-    #     Sentiment_Analysis.show()
-
     elif projects_page == "Bias Assessment":
         # Import the ALS Disease project page only when selected
         import my_pages.Bias_project as Bias_project
@@ -66,37 +59,5 @@ elif main_section == "📬 Contact":
     contactform.display_contact_form()
 
 
-# import streamlit as st
-# from my_pages import About_me, Certifications, contactform
-# from my_pages import Brain_Turmor, Water_Portability, ALS_Disease, Bias_project, Sentiment_Analysis
 
-# st.set_page_config(page_title="Portfolio", page_icon="📁")
 
-# # Sidebar Navigation
-# st.sidebar.title("Navigation")
-
-# # Main section to select About Me, Projects, or Contact
-# main_section = st.sidebar.radio("Go to", ["👤 About Me", "📁 Projects", "📜 Certifications", "📬 Contact"])
-
-# # Page mapping dictionary
-# PAGE_MAP = {
-#     "👤 About Me": About_me.home,
-#     "📜 Certifications": Certifications.show,
-#     "📬 Contact": contactform.display_contact_form
-# }
-
-# # Project mapping dictionary
-# PROJECT_MAP = {
-#     "Brain Tumor": Brain_Turmor.show,
-#     "Water Portability": Water_Portability.show,
-#     "ALS Disease": ALS_Disease.show,
-#     "Bias Assessment": Bias_project.show,
-#     "Sentiment Analysis": Sentiment_Analysis.show
-# }
-
-# # Display selected page
-# if main_section == "📁 Projects":
-#     project = st.sidebar.selectbox("Select Project", list(PROJECT_MAP.keys()))
-#     PROJECT_MAP[project]()
-# else:
-#     PAGE_MAP[main_section]()
