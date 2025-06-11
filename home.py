@@ -99,6 +99,7 @@ def home():
         data=pdf_bytes,
         file_name="CV.pdf",
         mime="application/pdf",
+        key="cv_charles_olanrewaju_about_me_btn"
     )
 
     st.write("##")
