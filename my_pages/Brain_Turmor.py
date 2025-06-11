@@ -23,7 +23,7 @@ def show():
                     data=PDFbyte,
                     file_name="Brain_Tumor_DL_Poster.pdf",
                     mime='application/octet-stream',
-                    key="poster_download_button")
+                    key="poster_download")
 
     # Overview
     st.markdown("""

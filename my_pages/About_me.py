@@ -91,7 +91,7 @@ def home():
         data=pdf_bytes,
         file_name="CV.pdf",
         mime="application/pdf",
-        key="download_cv_button"
+        key="cv_charles_olanrewaju"  # Unique key for the button to avoid conflicts
     )
 
 
